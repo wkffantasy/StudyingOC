@@ -10,5 +10,6 @@ target ‘Studying’ do
 #    pod 'BaiduMapKit','~>3.3.2'
 
     pod 'kfMarqueeView','~>1.0'
+    pod 'BabyBluetooth', '~> 0.6.0'
 
 end

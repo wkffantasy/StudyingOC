@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BabyBluetooth (0.6.0)
   - kfMarqueeView (1.0)
   - Masonry (0.6.4)
   - MBProgressHUD (1.0.0)
@@ -24,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - BabyBluetooth (~> 0.6.0)
   - kfMarqueeView (~> 1.0)
   - Masonry (~> 0.6.4)
   - MBProgressHUD (~> 1.0.0)
@@ -33,6 +35,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BabyBluetooth
     - kfMarqueeView
     - Masonry
     - MBProgressHUD
@@ -41,12 +44,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BabyBluetooth: 998483310b5f44724d97c2fd47e82ed1b7e412de
   kfMarqueeView: 77e8eacef1fef34d2b34080e401fb8ae827f7750
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: b9e7270a5bb68cd0e4cabfd296b9d6c041476e81
+PODFILE CHECKSUM: 758a9bda44197881a40196aeefc978661cd96507
 
 COCOAPODS: 1.6.1

@@ -23,37 +23,52 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self addAllChildControllers];
+    
+//    self.tabBar.backgroundColor = RGBCOLOR(0, 0, 0);
+    
+//    self.tabBar.backgroundImage = [[UIImage alloc]init];
+//    self.tabBar.shadowImage = [[UIImage alloc]init];
 }
 
 - (void)addAllChildControllers {
+    
     SubclassController * demos = [[SubclassController alloc]init];
     demos.dataArray = [self allDemosArray];
-    NavigationController * navi1 = [self setUpChildViewController:demos title:@"demos"];
+    NavigationController * navi1 = [self setUpChildViewController:demos title:@"demos" normalImage:@"icon_tabbar_ovis_normalImage" selectImage:@"icon_tabbar_ovis_selectImage"];
     
     
     SubclassController * classStudy = [[SubclassController alloc]init];
     classStudy.dataArray = [self classArray];
     
-    NavigationController * navi2 =[self setUpChildViewController:classStudy title:@"classStudy"];
+    NavigationController * navi2 =[self setUpChildViewController:classStudy title:@"classStudy" normalImage:@"icon_tabbar_support_normalImage" selectImage:@"icon_tabbar_support_selectImage"];
     
     self.viewControllers = @[navi1,navi2];
 }
 
-- (NavigationController *)setUpChildViewController:(UIViewController *)vc title:(NSString *)title {
+- (NavigationController *)setUpChildViewController:(UIViewController *)vc title:(NSString *)title normalImage:(NSString *)normalImage selectImage:(NSString *)selectImage{
     
     vc.title = title;
     vc.tabBarItem.title = title;
     
-    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateNormal];
     
-    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:HEXRGBACOLOR(0x05a3fa, 1),NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateNormal];
+    UIImage * thisNormalImage =[UIImage imageNamed:normalImage];
+    vc.tabBarItem.image = [thisNormalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    
+    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    
+    [vc.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -3)];
+    
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateNormal];
+    
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:RGBCOLOR(0, 246, 246) ,NSFontAttributeName:[UIFont systemFontOfSize:15.0f]} forState:UIControlStateSelected];
     
     return [[NavigationController alloc]initWithRootViewController:vc];
     
 }
 
 //跳转的所有的controller
-
 #pragma  mark oc-demos
 - (void)jumpToController:(NSString *)vc {
     id thisVC = [[NSClassFromString(vc) alloc]init];
