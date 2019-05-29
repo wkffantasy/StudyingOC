@@ -34,9 +34,6 @@
 
 //model
 
-//lib or others
-#import "Masonry.h"
-
 
 @interface ViewController ()<UIScrollViewDelegate>
 

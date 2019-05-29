@@ -22,6 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+//    UITabBar * tabbar = [UITabBar appearance];
+//    tabbar.tintColor = [UIColor redColor];
+//    tabbar.barTintColor = [UIColor whiteColor];
+    
     [self addAllChildControllers];
     
 //    self.tabBar.backgroundColor = RGBCOLOR(0, 0, 0);
@@ -136,6 +142,12 @@
 - (NSArray *)allDemosArray {
     
     NSArray * dictArray = @[
+                            @{
+                                @"title":@"小球在大圆里滑动",
+                                @"titleDescription":@"。。。。",
+                                @"status":@"完成",
+                                @"jumeTo":@"RockerController",
+                                },
                             @{
                                 @"title":@"一个可编辑的tableView的cell",
                                 @"titleDescription":@"。。。。",

@@ -77,6 +77,8 @@
 		4B220103224E231A006D90D6 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2200FC224E231A006D90D6 /* HomeCell.m */; };
 		4B220104224E231A006D90D6 /* SubclassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2200FD224E231A006D90D6 /* SubclassController.m */; };
 		4B2759BE225EE7840040B305 /* BlueToothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2759BD225EE7840040B305 /* BlueToothController.m */; };
+		4B8FE594229E5200007D4891 /* RockerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FE593229E5200007D4891 /* RockerController.m */; };
+		4B8FE597229E5239007D4891 /* RockerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FE596229E5239007D4891 /* RockerView.m */; };
 		8A4850EB9AD26B35D9D73B38 /* libPods-Studying.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D136CCDB6EAFCE6490F50285 /* libPods-Studying.a */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +233,10 @@
 		4B220106224E2395006D90D6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4B2759BC225EE7840040B305 /* BlueToothController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothController.h; sourceTree = "<group>"; };
 		4B2759BD225EE7840040B305 /* BlueToothController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothController.m; sourceTree = "<group>"; };
+		4B8FE592229E5200007D4891 /* RockerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockerController.h; sourceTree = "<group>"; };
+		4B8FE593229E5200007D4891 /* RockerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockerController.m; sourceTree = "<group>"; };
+		4B8FE595229E5239007D4891 /* RockerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RockerView.h; sourceTree = "<group>"; };
+		4B8FE596229E5239007D4891 /* RockerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RockerView.m; sourceTree = "<group>"; };
 		7BCC7B137DDC182F4811789D /* Pods-Studying.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Studying.release.xcconfig"; path = "Target Support Files/Pods-Studying/Pods-Studying.release.xcconfig"; sourceTree = "<group>"; };
 		7DB804CF0D9847FCD3824974 /* Pods-Studying.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Studying.debug.xcconfig"; path = "Target Support Files/Pods-Studying/Pods-Studying.debug.xcconfig"; sourceTree = "<group>"; };
 		D136CCDB6EAFCE6490F50285 /* libPods-Studying.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Studying.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -633,6 +639,7 @@
 		4B2200F1224E22E8006D90D6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4B8FE591229E51E8007D4891 /* Rocker */,
 				4B2759BB225EE72F0040B305 /* BlueToothDemo */,
 				4B04FFAF2255B4BA007D8AF6 /* GCD */,
 				4B04FF5E22530F8F007D8AF6 /* Marquee */,
@@ -681,6 +688,17 @@
 				4B2759BD225EE7840040B305 /* BlueToothController.m */,
 			);
 			path = BlueToothDemo;
+			sourceTree = "<group>";
+		};
+		4B8FE591229E51E8007D4891 /* Rocker */ = {
+			isa = PBXGroup;
+			children = (
+				4B8FE595229E5239007D4891 /* RockerView.h */,
+				4B8FE596229E5239007D4891 /* RockerView.m */,
+				4B8FE592229E5200007D4891 /* RockerController.h */,
+				4B8FE593229E5200007D4891 /* RockerController.m */,
+			);
+			path = Rocker;
 			sourceTree = "<group>";
 		};
 		89B0A74E9A23FFBE36F7277B /* Frameworks */ = {
@@ -879,11 +897,13 @@
 				4B04FF1B22530F5F007D8AF6 /* MyCarModel.m in Sources */,
 				4B04FF2C22530F6C007D8AF6 /* RollingItemView.m in Sources */,
 				4B220101224E231A006D90D6 /* HomeModel.m in Sources */,
+				4B8FE597229E5239007D4891 /* RockerView.m in Sources */,
 				4B04FF9222530F90007D8AF6 /* PlayRecordVideoController.m in Sources */,
 				4B220104224E231A006D90D6 /* SubclassController.m in Sources */,
 				4B220103224E231A006D90D6 /* HomeCell.m in Sources */,
 				4B04FF3422530F72007D8AF6 /* AuthcodeView.m in Sources */,
 				4B220100224E231A006D90D6 /* ViewController.m in Sources */,
+				4B8FE594229E5200007D4891 /* RockerController.m in Sources */,
 				4B04FF7E22530F90007D8AF6 /* PlayerProgressView.m in Sources */,
 				4B04FF4A22530F79007D8AF6 /* KFNaviController.m in Sources */,
 				4B04FF8022530F90007D8AF6 /* VideoDemoController.m in Sources */,

@@ -11,8 +11,6 @@
 //view
 #import "MyLabel.h"
 
-//lib
-#import "Masonry.h"
 
 //颜色
 #define WKFColor(a,b,c,d) [UIColor colorWithRed:(a)/255. green:(b)/255. blue:(c)/255. alpha:(d)]

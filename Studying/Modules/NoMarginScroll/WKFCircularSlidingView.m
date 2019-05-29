@@ -8,7 +8,6 @@
 
 #import "WKFCircularSlidingView.h"
 
-#import "Masonry.h"
 
 #define  pageControlH  20
 

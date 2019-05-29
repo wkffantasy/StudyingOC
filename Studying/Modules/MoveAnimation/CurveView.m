@@ -8,8 +8,6 @@
 
 #import "CurveView.h"
 
-#import "Masonry.h"
-
 @interface CurveView ()
 
 @property (nonatomic,assign) CGPoint beganPoint;

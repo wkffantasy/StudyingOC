@@ -9,8 +9,6 @@
 //view
 #import "HeaderSelectView.h"
 
-//lib
-#import "Masonry.h"
 
 @interface HeaderSelectView ()
 

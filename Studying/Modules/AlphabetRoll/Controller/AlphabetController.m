@@ -17,9 +17,6 @@
 #import "MyCarCell.h"
 #import "MyCarsView.h"
 
-//lib or others
-#import "Masonry.h"
-
 @interface AlphabetController () <UITableViewDataSource,UITableViewDelegate>
 
 //存放数据的数组

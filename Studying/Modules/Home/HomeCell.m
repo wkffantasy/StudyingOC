@@ -8,8 +8,6 @@
 
 #import "HomeCell.h"
 
-//lib
-#import "Masonry.h"
 
 #define  margin 20
 

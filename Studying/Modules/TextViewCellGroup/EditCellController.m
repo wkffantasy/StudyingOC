@@ -11,8 +11,6 @@
 //view
 #import "EditCell.h"
 
-//lib or others
-#import "Masonry.h"
 
 @interface EditCellController ()<UITableViewDelegate,UITableViewDataSource>
 

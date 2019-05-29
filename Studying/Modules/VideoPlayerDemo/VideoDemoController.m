@@ -12,7 +12,6 @@
 #define urlString2   @"http://media7.smartstudy.com/pd/videos/2015/3e/5a/16041/mp4/dest.m3u8"
 #define urlString3   @"http://v.smartstudy.com/pd/videos/2015/67/df/10422/mp4/dest.m3u8"
 
-#import "Masonry.h"
 
 #import "VideoPlayController.h"
 

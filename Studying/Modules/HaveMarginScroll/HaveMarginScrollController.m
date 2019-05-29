@@ -8,8 +8,6 @@
 
 #import "HaveMarginScrollController.h"
 
-//lib or others
-#import "Masonry.h"
 
 //view
 #import "RollingCircleView.h"

@@ -10,8 +10,6 @@
 #import "RollingCircleView.h"
 #import "RollingItemView.h"
 
-//lib  or others
-#import "Masonry.h"
 
 #define  pageControlH  20
 #define  ScreenWidth  [UIScreen mainScreen].bounds.size.width

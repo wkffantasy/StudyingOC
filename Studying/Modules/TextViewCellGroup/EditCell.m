@@ -8,8 +8,6 @@
 
 #import "EditCell.h"
 
-//lib or others
-#import "Masonry.h"
 
 @interface EditCell ()<UITextViewDelegate>
 

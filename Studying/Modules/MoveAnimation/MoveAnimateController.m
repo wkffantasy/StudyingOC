@@ -11,9 +11,6 @@
 //view
 #import "CurveView.h"
 
-
-//lib
-#import "Masonry.h"
 //#import "UINavigationController+FDFullscreenPopGesture.h"
 
 #define maxMoveHeight  60
